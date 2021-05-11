@@ -32,7 +32,7 @@ class Company{
 }
 public class CompanySalary {
     public static void main(String args[]){
-        Employee[]employee=new Employee[29];
+        Employee[]employee=new Employee[30];
         for (int i=0;i< employee.length;i++){
             if(i%3==0)
                 employee[i]=new WeekWorker();
