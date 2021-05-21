@@ -1,4 +1,5 @@
 abstract class Shape {
+    double area=10;
     public abstract double area();
     public abstract double perimeter();
 }
@@ -24,11 +25,9 @@ class square extends Shape {
         side1 = s1;
         side2 = s2;
     }
-
     public double area() {
         return side1 * side2;
     }
-
     @Override
     public double perimeter() {
         return 0;
@@ -54,7 +53,7 @@ class TestPoly {
     public static void main(String[] args) {
         Shape s1=new Circle(3);
         System.out.println("圆形面积为:"+s1.area());
-        Shape s2=new square(4,4 );
+        Shape s2=new square(10, 10);
         System.out.println("正方形面积为:"+s2.area());
         Shape s3=new Rectangle(2,5);
         System.out.println("长方形面积为："+s3.area());
